@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} The Base {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Stylesheet for CSS -->
+      <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <title>The Album Shelf</title>
+
+<div class ="navbar">  <!-- the Navbar -->
+    <a href="{{ url_for('views.account') }}" >
+        <img src="{{ url_for('static', filename='/images/pf_icon.png') }}" class = "profile"   alt = "PFP">
+    </a>
+    <nav>
+        <li><a href="{{ url_for('views.records') }}">Records</a></li>
+        <li><a href="{{ url_for('views.login') }}">Login</a></li>
+        <li><a href="{{ url_for('views.register') }}">Register</a></li>
+        <li><a href="{{ url_for('views.logout') }}">Click To Logout</a></li>
+    </nav>
+</div>
+
+<!-- FLASH MESSAGES -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul id="flash-messages">
+            {% for category, message in messages %}
+                <li class="flash {{ category }}">{{ message }}</li>
+        </ul>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<a href="{{ url_for('views.home') }}" >
+<img src="{{ url_for('static', filename='/images/Designer.png') }}" class = "logo"   alt = "logo">
+</a>
+
+
+
+{% block content %} <!-- call this block whatever -->
+
+{% endblock %} <!-- ends the base html -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    setTimeout(function () {
+        $("#flash-messages").fadeOut("fast");
+    }, 5000);
+</script>
+
+
+
+
+</body>
+</html>

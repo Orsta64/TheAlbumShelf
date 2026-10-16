@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='/images/paranoid.jpg') }}" class = "PAN"   alt = "p">
+<h1>Paranoid</h1>
+<p>Released 18 September 1970, It was the 2nd album released by Black Sabbath. Some notable songs from this album include: Paranoid, War Pigs, Iron Man</p>
+<button class="list_button">
+    Add to list
+</button>
+
+{% endblock %} <!-- ends the base HTML -->

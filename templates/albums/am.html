@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='/images/arcticmonkeys.jpg') }}" class = "am"   alt = "AM">
+<h1>AM, Arctic Monkeys.</h1>
+<p>Released 6 September 2013, It was the 5th album released by Arctic Monkeys. Some notable songs from this album include: R U Mine?, Do I Wanna Know</p>
+<button class="list_button">
+    Add to list
+</button>
+
+{% endblock %} <!-- ends the base HTML -->

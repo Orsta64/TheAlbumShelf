@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<title>Records</title>
+
+<h1>Our Selection of records</h1>
+
+<container class="albums">
+
+    <a href="{{ url_for('views.dsotm') }}" >
+    <img src="{{ url_for('static', filename='/images/pinkfloyd.jpg') }}" class = "pf"    alt = "PF">
+    </a>
+    <a href="{{ url_for('views.queen') }}">
+    <img src="{{ url_for('static', filename='/images/queen.jpg') }}" class = "q"   alt = "Q">
+    </a>
+    <a href="{{ url_for('views.RHCP') }}">
+    <img src="{{ url_for('static', filename='/images/redhot.jpg') }}" class = "rh"   alt = "RH">
+    </a>
+    <a href="{{ url_for('views.LZT') }}">
+    <img src="{{ url_for('static', filename='/images/ledzep.jpg') }}" class = "lz"   alt = "LZ">
+    </a>
+    <a href="{{ url_for('views.PAN') }}">
+    <img src="{{ url_for('static', filename='/images/paranoid.jpg') }}" class = "p"   alt = "P">
+    </a>
+    <a href="{{ url_for('views.ARM') }}">
+    <img src="{{ url_for('static', filename='/images/arcticmonkeys.jpg') }}" class = "am"   alt = "AM">
+    </a>
+    <a href="{{ url_for('views.BB') }}">>
+    <img src="{{ url_for('static', filename='/images/beastieboys.jpg') }}" class = "bb"   alt = "AM">
+    </a>
+    <a href="{{ url_for('views.NRB') }}">>
+    <img src="{{ url_for('static', filename='/images/nirvana.jpg') }}" class = "n"   alt = "AM">
+    </a>
+
+
+</container>
+
+
+
+
+{% endblock %} <!-- ends the base HTML -->

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='/images/beastieboys.jpg') }}" class = "bb"   alt = "BB">
+<h1>Paul's Boutquie, Beastie Boys.</h1>
+<p>Released 25th July 1989, It was the 2nd album released by The Beastie Boys. Some notable songs from this album include: To All The Girls, High Plains Drifter</p>
+<button class="list_button">
+    Add to list
+</button>
+
+{% endblock %} <!-- ends the base HTML -->

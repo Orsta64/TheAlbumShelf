@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='/images/queen.jpg') }}" class = "queen"    alt = "Q">
+<h1>News of the world, Queen</h1>
+<p>News of the world, Released 28th of October 1977. Some noteable songs include: We will rock you, We are the champions</p>
+
+{% endblock %} <!-- ends the base HTML -->

@@ -1,0 +1,199 @@
+.caacupe-one-regular {
+  font-family: "Caacupe One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body{
+    background: grey;
+}
+
+.logo {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    width: 10%;
+    margin-left: 45%;
+}
+
+.navbar > a {
+    display: inline-block;
+    width: fit-content;
+}
+
+
+.profile {
+    display: flex;
+    top: 10px;
+    width: 20%;
+
+}
+
+
+nav {
+  text-align: center;
+  list-style-type: none;
+  margin-left: 40%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  width: 20%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+
+/* RECORDS */
+.albums{
+    margin-left: 5%;
+}
+
+.pf {
+    transition: transform 0.3s ease;
+}
+
+.pf:hover {
+    transform: scale(1.1);
+}
+
+.q {
+    transition: transform 0.3s ease;
+}
+
+.q:hover {
+    transform: scale(1.1);
+}
+
+.rh {
+    transition: transform 0.3s ease;
+}
+
+.rh:hover {
+    transform: scale(1.1);
+}
+
+.lz {
+    transition: transform 0.3s ease;
+}
+
+.lz:hover {
+    transform: scale(1.1);
+}
+
+.p {
+    transition: transform 0.3s ease;
+}
+
+.p:hover {
+    transform: scale(1.1);
+}
+
+.am{
+    transition: transform 0.3s ease;
+}
+
+.am:hover {
+    transform: scale(1.1);
+}
+
+.bb{
+    transition: transform 0.3s ease;
+}
+
+.bb:hover{
+    transform: scale(1.1);
+}
+
+.n{
+    transition: transform 0.3s ease;
+}
+
+.n:hover{
+    transform: scale(1.1);
+}
+
+.dsotm{
+    transform: scale(1.5);
+    margin-left: 5%;
+}
+
+.queen{
+    transform: scale(1.5);
+    margin-left: 5%;
+}
+
+.RHCP{
+    transform: scale(1.5);
+    margin-left: 5%;
+}
+
+.LZT{
+    transform: scale(1.5);
+    margin-left: 5%;
+}
+
+.PAN{
+    transform: scale(1.5);
+    margin-left: 5%;
+}
+
+/* RECORDS */
+
+.list_button{
+    margin-left: 48%;
+}
+
+/* FLASH MESSAGE STYLING */
+
+#flash-messages{
+    list-style: none;
+    padding: 5px;
+    margin-left: 20px;
+    font-family: Bahnschrift;
+}
+
+.flash{
+    padding: 12px;
+    border-radius: 6px;
+    max-width: 900px;
+    margin: 10px auto;
+    animation: slideDown 0.5s ease-out;
+}
+
+.flash.success{
+    background: green;
+    color: white;
+}
+
+.flash.error{
+    background: red;
+    color: white;
+}
+
+.flash.incorrect{
+    background: #777707;
+    color: white;
+}

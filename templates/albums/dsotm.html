@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %} <!-- this is the extention of the base HTML so you can keep each page cleaner -->
+
+{% block content %}
+
+<img src="{{ url_for('static', filename='/images/pinkfloyd.jpg') }}" class = "dsotm"    alt = "PF">
+<h1>Dark Side Of The Moon, Pink Floyd.</h1>
+<p>Released 1 March 1973, It was the 8th album released by Pink Floyd. Some notable songs from this album include: Time, Eclipse, Great Gig In The Sky</p>
+<button class="list_button">
+    Add to list
+</button>
+
+{% endblock %} <!-- ends the base HTML -->
